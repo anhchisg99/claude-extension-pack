@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Claude No ESC Stop",
+  "version": "1.0",
+  "description": "Prevent ESC key from stopping Claude response generation on claude.ai",
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
